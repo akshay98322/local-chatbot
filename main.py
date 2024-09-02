@@ -17,6 +17,13 @@ chain = prompt | model
 
 
 def handle_conversation():
+    """
+    Handles a conversational interaction with the user, using a language model to generate responses.
+
+    The function prompts the user for input, passes it to the language model, and prints the generated response. The conversation history is maintained and provided to the language model for context.
+
+    The function continues until the user enters 'exit' to quit the conversation.
+    """
     context = ""
     print("Welcome to the Jarvis ChatBot! Type 'exit' to quit the conversation.")
     while True:
